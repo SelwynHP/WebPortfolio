@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Contact Me Page</title>
+    <link rel="stylesheet" href="CSS/reset.css"/>
+    <link rel="stylesheet" href="CSS/ContactStyle.css">
+    
+    <script src="js/ContactPageJS.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="WelcomePage.html"><img src="img/mydomainelogo.jpg">
+            </div>
+            <ul>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="HometownPage.html">Hometown</a></li>
+                <li><a href="ProfilePage.html">Profile</a></li>
+                <li><a href="TimelinePage.html">Timeline</a></li>
+                <li class="active"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+<div class="wrapper">
+
+        <form name = "form1" 
+        onsubmit="return validate_user()"
+        action="http://localhost/SelfIntroduction/index.php" method="post">
+
+            <div class="contact-form">
+                <div class="input-fields">
+                <input type="text" class="input" name="user_name" size="30" maxlength="50" placeholder="Name">
+                <input type="text" class="input" name="user_email" size="30" maxlength="50" placeholder="Email Address">
+                <input type="text" class="input" name="user_phone" size="30" maxlength="50" placeholder="Phone">
+                <input type="text" class="input" name="user_subject" size="300" maxlength="500" placeholder="Subject">
+                </div>
+                <div class="msg">
+                <textarea placeholder="Message"></textarea>
+                <!--<div class="btn">send</div> -->
+                <button type="submit">send</button>
+                </div>
+            </div>
+            </div>
+        </form>	
+
+
+</body>
+</html>
